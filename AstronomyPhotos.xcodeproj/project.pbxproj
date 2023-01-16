@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40C061DE2975EE90000B6639 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C061DD2975EE90000B6639 /* AppDelegate.swift */; };
+		40C061E02975EE90000B6639 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C061DF2975EE90000B6639 /* SceneDelegate.swift */; };
+		40C061E22975EE90000B6639 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C061E12975EE90000B6639 /* ViewController.swift */; };
+		40C061E52975EE90000B6639 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C061E32975EE90000B6639 /* Main.storyboard */; };
+		40C061E72975EE91000B6639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C061E62975EE91000B6639 /* Assets.xcassets */; };
+		40C061EA2975EE91000B6639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C061E82975EE91000B6639 /* LaunchScreen.storyboard */; };
+		40C061F82975EE9D000B6639 /* AstronomyPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C061F72975EE9D000B6639 /* AstronomyPhotosTests.swift */; };
+		40C061FF2975EF22000B6639 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C061FE2975EF22000B6639 /* NetworkHelper.swift */; };
+		40C062012975EF31000B6639 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C062002975EF31000B6639 /* AppError.swift */; };
+		40C062032975F1B3000B6639 /* PlanetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C062022975F1B3000B6639 /* PlanetCell.swift */; };
+		40C062052975F2F7000B6639 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C062042975F2F7000B6639 /* UIImageView+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40C061F92975EE9D000B6639 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C061D22975EE90000B6639 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40C061D92975EE90000B6639;
+			remoteInfo = AstronomyPhotos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40C061DA2975EE90000B6639 /* AstronomyPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstronomyPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C061DD2975EE90000B6639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40C061DF2975EE90000B6639 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		40C061E12975EE90000B6639 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40C061E42975EE90000B6639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40C061E62975EE91000B6639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40C061E92975EE91000B6639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40C061EB2975EE91000B6639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C061F52975EE9D000B6639 /* AstronomyPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstronomyPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C061F72975EE9D000B6639 /* AstronomyPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPhotosTests.swift; sourceTree = "<group>"; };
+		40C061FE2975EF22000B6639 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		40C062002975EF31000B6639 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		40C062022975F1B3000B6639 /* PlanetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCell.swift; sourceTree = "<group>"; };
+		40C062042975F2F7000B6639 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40C061D72975EE90000B6639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C061F22975EE9D000B6639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40C061D12975EE90000B6639 = {
+			isa = PBXGroup;
+			children = (
+				40C061DC2975EE90000B6639 /* AstronomyPhotos */,
+				40C061F62975EE9D000B6639 /* AstronomyPhotosTests */,
+				40C061DB2975EE90000B6639 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40C061DB2975EE90000B6639 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40C061DA2975EE90000B6639 /* AstronomyPhotos.app */,
+				40C061F52975EE9D000B6639 /* AstronomyPhotosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40C061DC2975EE90000B6639 /* AstronomyPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				40C061DD2975EE90000B6639 /* AppDelegate.swift */,
+				40C061DF2975EE90000B6639 /* SceneDelegate.swift */,
+				40C061E12975EE90000B6639 /* ViewController.swift */,
+				40C061FE2975EF22000B6639 /* NetworkHelper.swift */,
+				40C062042975F2F7000B6639 /* UIImageView+Extensions.swift */,
+				40C062022975F1B3000B6639 /* PlanetCell.swift */,
+				40C062002975EF31000B6639 /* AppError.swift */,
+				40C061E32975EE90000B6639 /* Main.storyboard */,
+				40C061E62975EE91000B6639 /* Assets.xcassets */,
+				40C061E82975EE91000B6639 /* LaunchScreen.storyboard */,
+				40C061EB2975EE91000B6639 /* Info.plist */,
+			);
+			path = AstronomyPhotos;
+			sourceTree = "<group>";
+		};
+		40C061F62975EE9D000B6639 /* AstronomyPhotosTests */ = {
+			isa = PBXGroup;
+			children = (
+				40C061F72975EE9D000B6639 /* AstronomyPhotosTests.swift */,
+			);
+			path = AstronomyPhotosTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40C061D92975EE90000B6639 /* AstronomyPhotos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C061EE2975EE91000B6639 /* Build configuration list for PBXNativeTarget "AstronomyPhotos" */;
+			buildPhases = (
+				40C061D62975EE90000B6639 /* Sources */,
+				40C061D72975EE90000B6639 /* Frameworks */,
+				40C061D82975EE90000B6639 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstronomyPhotos;
+			productName = AstronomyPhotos;
+			productReference = 40C061DA2975EE90000B6639 /* AstronomyPhotos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40C061F42975EE9D000B6639 /* AstronomyPhotosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C061FB2975EE9D000B6639 /* Build configuration list for PBXNativeTarget "AstronomyPhotosTests" */;
+			buildPhases = (
+				40C061F12975EE9D000B6639 /* Sources */,
+				40C061F22975EE9D000B6639 /* Frameworks */,
+				40C061F32975EE9D000B6639 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40C061FA2975EE9D000B6639 /* PBXTargetDependency */,
+			);
+			name = AstronomyPhotosTests;
+			productName = AstronomyPhotosTests;
+			productReference = 40C061F52975EE9D000B6639 /* AstronomyPhotosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40C061D22975EE90000B6639 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					40C061D92975EE90000B6639 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					40C061F42975EE9D000B6639 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 40C061D92975EE90000B6639;
+					};
+				};
+			};
+			buildConfigurationList = 40C061D52975EE90000B6639 /* Build configuration list for PBXProject "AstronomyPhotos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40C061D12975EE90000B6639;
+			productRefGroup = 40C061DB2975EE90000B6639 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40C061D92975EE90000B6639 /* AstronomyPhotos */,
+				40C061F42975EE9D000B6639 /* AstronomyPhotosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40C061D82975EE90000B6639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C061EA2975EE91000B6639 /* LaunchScreen.storyboard in Resources */,
+				40C061E72975EE91000B6639 /* Assets.xcassets in Resources */,
+				40C061E52975EE90000B6639 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C061F32975EE9D000B6639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40C061D62975EE90000B6639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C062032975F1B3000B6639 /* PlanetCell.swift in Sources */,
+				40C062052975F2F7000B6639 /* UIImageView+Extensions.swift in Sources */,
+				40C061FF2975EF22000B6639 /* NetworkHelper.swift in Sources */,
+				40C061E22975EE90000B6639 /* ViewController.swift in Sources */,
+				40C062012975EF31000B6639 /* AppError.swift in Sources */,
+				40C061DE2975EE90000B6639 /* AppDelegate.swift in Sources */,
+				40C061E02975EE90000B6639 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C061F12975EE9D000B6639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C061F82975EE9D000B6639 /* AstronomyPhotosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40C061FA2975EE9D000B6639 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40C061D92975EE90000B6639 /* AstronomyPhotos */;
+			targetProxy = 40C061F92975EE9D000B6639 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40C061E32975EE90000B6639 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40C061E42975EE90000B6639 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40C061E82975EE91000B6639 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40C061E92975EE91000B6639 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40C061EC2975EE91000B6639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40C061ED2975EE91000B6639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40C061EF2975EE91000B6639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V23Z3P8TP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AstronomyPhotos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CroweCoding.AstronomyPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40C061F02975EE91000B6639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V23Z3P8TP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AstronomyPhotos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CroweCoding.AstronomyPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40C061FC2975EE9D000B6639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V23Z3P8TP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CroweCoding.AstronomyPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstronomyPhotos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AstronomyPhotos";
+			};
+			name = Debug;
+		};
+		40C061FD2975EE9D000B6639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V23Z3P8TP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CroweCoding.AstronomyPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstronomyPhotos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AstronomyPhotos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40C061D52975EE90000B6639 /* Build configuration list for PBXProject "AstronomyPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C061EC2975EE91000B6639 /* Debug */,
+				40C061ED2975EE91000B6639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C061EE2975EE91000B6639 /* Build configuration list for PBXNativeTarget "AstronomyPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C061EF2975EE91000B6639 /* Debug */,
+				40C061F02975EE91000B6639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C061FB2975EE9D000B6639 /* Build configuration list for PBXNativeTarget "AstronomyPhotosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C061FC2975EE9D000B6639 /* Debug */,
+				40C061FD2975EE9D000B6639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40C061D22975EE90000B6639 /* Project object */;
+}
